@@ -3,21 +3,21 @@ import Image from "next/image";
 
 const features = [
 	{
-		name: "Push to deploy.",
+		name: "Security-Focused Installations",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+			"From smart locks to real-time security monitoring, smart home systems put peace of mind at your fingertips—no matter where you are.",
 		icon: CloudArrowUpIcon,
 	},
 	{
-		name: "SSL certificates.",
+		name: "Convenience + Comfort",
 		description:
-			"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+			"Imagine walking into a perfectly lit, climate-controlled home that responds to your voice or phone. Smart installations make it effortless.",
 		icon: LockClosedIcon,
 	},
 	{
-		name: "Database backups.",
+		name: "Energy Efficiency",
 		description:
-			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+			"Lower your energy bills while increasing comfort and control. Smart tech optimizes your home’s performance—so you don’t have to.",
 		icon: ServerIcon,
 	},
 ];
@@ -27,15 +27,14 @@ export default function Home() {
 		<div className="overflow-hidden bg-white py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-					<div className="lg:pt-4 lg:pr-8">
+					<div className="lg:pt-0 lg:pr-8">
 						<div className="lg:max-w-lg">
-							<h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-							<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-								A better workflow
-							</p>
+							<h1 className="text-base/7 font-semibold text-indigo-600">Your East Valley Smart Home Installation Resource</h1>
+							<h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+								Smarter Living Starts Here, Sign Up for Expert Guidance
+							</h2>
 							<p className="mt-6 text-lg/8 text-gray-600">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-								iste dolor cupiditate blanditiis ratione.
+								A professionally installed smart home system lets you control lighting, climate, security, and entertainment from anywhere—making everyday life more convenient, secure, and energy efficient.
 							</p>
 							<dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
 								{features.map((feature) => (
