@@ -57,6 +57,7 @@ export default function Home() {
 					</div>
 
 					<div className="bg-white rounded-xl shadow-xl ring-1 ring-gray-400/10 p-8 flex flex-col gap-6 w-full max-w-lg mx-auto">
+						<h3 className="text-2xl font-bold text-indigo-700 mb-4">Get Expert Smart Home Advice—No Obligation, Just Answers!</h3>
 						<form className="space-y-6">
 							<fieldset>
 								<legend className="text-sm font-medium text-gray-700 mb-2">Contact Type</legend>
@@ -74,50 +75,48 @@ export default function Home() {
 							<div className="space-y-4">
 								<div>
 									<label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
-									<input type="text" id="firstName" name="firstName" autoComplete="given-name" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<input type="text" id="firstName" name="firstName" autoComplete="given-name" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 								<div>
 									<label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
-									<input type="text" id="lastName" name="lastName" autoComplete="family-name" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<input type="text" id="lastName" name="lastName" autoComplete="family-name" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+								</div>
+								<div>
+									<label htmlFor="company" className="block text-sm font-medium text-gray-700">Company Name <span className="text-gray-400">(optional)</span></label>
+									<input type="text" id="company" name="company" autoComplete="organization" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" />
+								</div>
+								<div>
+									<label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+									<input type="email" id="email" name="email" autoComplete="email" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 							</div>
 							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 								<div>
 									<label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
-									<input type="tel" id="phone" name="phone" autoComplete="tel" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<input type="tel" id="phone" name="phone" autoComplete="tel" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 								<div>
-									<label htmlFor="company" className="block text-sm font-medium text-gray-700">Company Name <span className="text-gray-400">(optional)</span></label>
-									<input type="text" id="company" name="company" autoComplete="organization" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" />
-								</div>
-							</div>
-							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-								<div>
-									<label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-									<input type="email" id="email" name="email" autoComplete="email" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
-								</div>
-								<div>
-									<label htmlFor="city" className="block text-sm font-medium text-gray-700">City</label>
-									<input type="text" id="city" name="city" autoComplete="address-level2" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<label htmlFor="city" className="block text-sm font-medium text-gray-700">City / Location</label>
+									<input type="text" id="city" name="city" autoComplete="address-level2" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 							</div>
 							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 								<div>
 									<label htmlFor="zip" className="block text-sm font-medium text-gray-700">Zip Code</label>
-									<input type="text" id="zip" name="zip" autoComplete="postal-code" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<input type="text" id="zip" name="zip" autoComplete="postal-code" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 								<div>
-									<label htmlFor="county" className="block text-sm font-medium text-gray-700">County</label>
-									<input type="text" id="county" name="county" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
+									<label htmlFor="county" className="block text-sm font-medium text-gray-700">AZ County</label>
+									<input type="text" id="county" name="county" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required />
 								</div>
 							</div>
 							<div>
 								<label htmlFor="comments" className="block text-sm font-medium text-gray-700">Comments</label>
-								<textarea id="comments" name="comments" rows={4} className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm focus:border-indigo-600 focus:ring-indigo-500" placeholder="Tell us about your smart home installation needs..." required />
+								<textarea id="comments" name="comments" rows={4} className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm focus:border-indigo-600 focus:ring-indigo-500" placeholder="Tell us about your smart home installation needs..." required />
 							</div>
 							<div>
 								<label htmlFor="budget" className="block text-sm font-medium text-gray-700">Estimated Budget</label>
-								<select id="budget" name="budget" className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required>
+								<select id="budget" name="budget" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required>
 									<option value="">Select a budget range</option>
 									<option value="under-2k">Under $2,000</option>
 									<option value="2k-5k">$2,000 - $5,000</option>
@@ -127,7 +126,22 @@ export default function Home() {
 								</select>
 							</div>
 							<div>
+								<label htmlFor="timeline" className="block text-sm font-medium text-gray-700">Project Timeline</label>
+								<select id="timeline" name="timeline" className="mt-1 block w-full rounded-md px-3 py-1.5 border-2 border-gray-300 shadow-sm h-10 focus:border-indigo-600 focus:ring-indigo-500" required>
+									<option value="">Select a timeline</option>
+									<option value="asap">ASAP</option>
+									<option value="1-2-weeks">1-2 weeks</option>
+									<option value="1-month">Within 1 month</option>
+									<option value="1-3-months">1-3 months</option>
+									<option value="3-6-months">3-6 months</option>
+									<option value="flexible">Flexible / Not sure</option>
+								</select>
+							</div>
+							<div>
 								<button type="submit" className="w-full rounded-md bg-indigo-600 px-4 py-2 text-white font-semibold shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
+								<p className="mt-4 text-xs text-gray-500 text-left">
+  								We respect your privacy. Your information will only be used to contact you about our smart home installation products and services. We will never share or sell your details to third parties.
+								</p>
 							</div>
 						</form>
 					</div>
